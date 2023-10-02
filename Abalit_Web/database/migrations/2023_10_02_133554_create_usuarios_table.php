@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
             $table->string('email')->unique();
             $table->string('contraseña');
-            $table->string('tipo');
+            $table->enum('tipo', ['normal', 'delivery']);
             $table->string('caracteristicas');
             $table->timestamps();
         });

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->date('pickup_day');
             $table->time('pickup_time');
             $table->string('address');
-            $table->string('payment_type');
+            $table->enum('payment_type', ['efectivo', 'tarjeta']);
             $table->timestamps();
         });
     }
