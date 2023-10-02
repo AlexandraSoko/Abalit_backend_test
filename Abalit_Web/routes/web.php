@@ -22,3 +22,4 @@ Route::get('/login', function () {
 Route::get('/search', function () {
     return view('search');
 });
+Route::post('/signup', 'ProductoController@signup')->name('signup');
