@@ -49,4 +49,15 @@ class UsuarioController extends Controller
         // Redirige a una página de inicio de sesión o muestra un mensaje de éxito
         return redirect('/login')->with('success', '¡Registro exitoso! Por favor, inicia sesión.');
     }
+
+    public function forgotpassword(Request $request)
+    {
+        // Valida los datos del formulario
+        $request->validate([
+            'email' => 'required|string|email|unique:Usuario|max:255',
+        ]);
+        // Redirige a una página de inicio de sesión o muestra un mensaje de éxito
+        return redirect('/login')->with('success', '¡Registro exitoso! Por favor, inicia sesión.');
+    }
+
 }

@@ -25,4 +25,6 @@ Route::get('/search', function () {
 Route::get('/signup', function () {
     return view('signup');
 });
-//Route::get('/signup', 'ProductoController@signup')->name('signup');
+Route::get('/forgot', function () {
+    return view('forgot');
+});

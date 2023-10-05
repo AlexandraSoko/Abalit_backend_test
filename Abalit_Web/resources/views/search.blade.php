@@ -12,6 +12,14 @@
         <div>
             <button type="submit">Carrito</button>
         </div>
+
+        <div>
+            <button type="submit">Lista de deseos</button>
+        </div>
+
+        <div>
+            <button type="submit">Perfil</button>
+        </div>
     </form>
 </body>
 </html>
