@@ -60,4 +60,15 @@ class UsuarioController extends Controller
         return redirect('/login')->with('success', '¡Registro exitoso! Por favor, inicia sesión.');
     }
 
+    public function userEdit(Request $request)
+    {
+        // Valida los datos del formulario
+        $request->validate([
+            'nombre' => 'required|string|max:255',
+            'email' => 'required|string|email|unique:Usuario|max:255',
+            'telefono' => 'required|int|min:9|confirmed',
+        ]);
+    }
+
+
 }

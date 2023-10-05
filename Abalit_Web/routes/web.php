@@ -28,3 +28,6 @@ Route::get('/signup', function () {
 Route::get('/forgot', function () {
     return view('forgot');
 });
+Route::get('/userEdit', function () {
+    return view('userEdit');
+});

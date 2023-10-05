@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('contraseña');
             $table->enum('tipo', ['normal', 'delivery']);
             $table->string('caracteristicas');
+            $table->integer('telefono');
             $table->timestamps();
         });
     }
