@@ -15,11 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-})->name('inicio');
+});
 Route::get('/login', function () {
     return view('login');
 });
 Route::get('/search', function () {
     return view('search');
 });
-Route::post('/signup', 'ProductoController@signup')->name('signup');
+Route::get('/signup', function () {
+    return view('signup');
+});
+//Route::get('/signup', 'ProductoController@signup')->name('signup');

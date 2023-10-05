@@ -6,7 +6,7 @@
 <body>
     <h1>Registro</h1>
 
-    <form method="POST" action="{{ route('singup') }}">
+    <form method="POST">
         @csrf
 
         <div>
