@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/user', function () {
+    return view('user');
+});
 Route::get('/login', function () {
     return view('login');
 });
@@ -28,6 +31,9 @@ Route::get('/signup', function () {
 Route::get('/forgot', function () {
     return view('forgot');
 });
-Route::get('/userEdit', function () {
-    return view('userEdit');
+Route::get('/user/Edit', function () {
+    return view('edit');
+});
+Route::get('/user/changePassword', function () {
+    return view('changePassword');
 });

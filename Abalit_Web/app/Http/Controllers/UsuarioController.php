@@ -57,7 +57,7 @@ class UsuarioController extends Controller
             'email' => 'required|string|email|unique:Usuario|max:255',
         ]);
         // Redirige a una página de inicio de sesión o muestra un mensaje de éxito
-        return redirect('/login')->with('success', '¡Registro exitoso! Por favor, inicia sesión.');
+        return redirect('/user/changePassword');
     }
 
     public function userEdit(Request $request)
@@ -68,6 +68,11 @@ class UsuarioController extends Controller
             'email' => 'required|string|email|unique:Usuario|max:255',
             'telefono' => 'required|int|min:9|confirmed',
         ]);
+    }
+
+    public function changePassword(Request $request)
+    {
+
     }
 
 
