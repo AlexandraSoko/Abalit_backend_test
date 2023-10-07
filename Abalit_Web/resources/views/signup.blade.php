@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+     <!-- ... Otros encabezados ... -->
+     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Registro</title>
 </head>
 <body>
@@ -33,5 +35,6 @@
             <button type="submit">Registrar</button>
         </div>
     </form>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
