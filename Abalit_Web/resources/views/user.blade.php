@@ -6,7 +6,7 @@
 <body>
     <h1>Perfil</h1>
 
-    <form method="POST">
+    <form action="{{route('user.signup')}}" method="POST">
         @csrf
 
         <div>
